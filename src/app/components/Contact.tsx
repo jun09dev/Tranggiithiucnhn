@@ -3,20 +3,22 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export function Contact() {
+  const { t } = useLanguage();
+  
   return (
     <section id="contact" className="py-20 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl text-center mb-12">Liên Hệ</h2>
+        <h2 className="text-4xl text-center mb-12">{t('contact.title')}</h2>
         
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl mb-6">Hãy kết nối với tôi</h3>
+              <h3 className="text-2xl mb-6">{t('contact.subtitle')}</h3>
               <p className="text-gray-600 mb-8">
-                Tôi luôn sẵn sàng thảo luận về các dự án mới, ý tưởng sáng tạo 
-                hoặc cơ hội hợp tác. Đừng ngần ngại liên hệ!
+                {t('contact.description')}
               </p>
             </div>
             
@@ -38,27 +40,27 @@ export function Contact() {
           
           <Card>
             <CardHeader>
-              <CardTitle>Gửi tin nhắn</CardTitle>
+              <CardTitle>{t('contact.form.title')}</CardTitle>
               <CardDescription>
-                Điền form bên dưới và tôi sẽ phản hồi sớm nhất có thể
+                {t('contact.form.desc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
                 <div>
-                  <Input placeholder="Tên của bạn" />
+                  <Input placeholder={t('contact.form.name')} />
                 </div>
                 <div>
-                  <Input type="email" placeholder="Email của bạn" />
+                  <Input type="email" placeholder={t('contact.form.email')} />
                 </div>
                 <div>
                   <Textarea 
-                    placeholder="Tin nhắn của bạn" 
+                    placeholder={t('contact.form.message')} 
                     rows={4}
                   />
                 </div>
                 <Button type="submit" className="w-full">
-                  Gửi tin nhắn
+                  {t('contact.form.send')}
                 </Button>
               </form>
             </CardContent>

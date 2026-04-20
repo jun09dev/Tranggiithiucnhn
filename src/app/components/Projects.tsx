@@ -2,33 +2,36 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ExternalLink, Github } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export function Projects() {
+  const { t } = useLanguage();
+  
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Nền tảng thương mại điện tử đầy đủ tính năng với giỏ hàng, thanh toán, quản lý đơn hàng và dashboard admin.',
+      title: t('projects.ecommerce'),
+      description: t('projects.ecommerce.desc'),
       technologies: ['React', 'Node.js', 'Stripe', 'PostgreSQL'],
       github: '#',
       demo: '#'
     },
     {
-      title: 'Task Management App',
-      description: 'Ứng dụng quản lý công việc theo phong cách Kanban với real-time collaboration và notifications.',
+      title: t('projects.task'),
+      description: t('projects.task.desc'),
       technologies: ['Next.js', 'Socket.io', 'MongoDB', 'Tailwind CSS'],
       github: '#',
       demo: '#'
     },
     {
-      title: 'Social Media Dashboard',
-      description: 'Dashboard phân tích và quản lý đa nền tảng mạng xã hội với biểu đồ trực quan và lập lịch đăng bài.',
+      title: t('projects.social'),
+      description: t('projects.social.desc'),
       technologies: ['Vue.js', 'Python', 'Chart.js', 'Redis'],
       github: '#',
       demo: '#'
     },
     {
-      title: 'Mobile Fitness Tracker',
-      description: 'Ứng dụng mobile theo dõi sức khỏe và hoạt động thể chất với tích hợp thiết bị đeo.',
+      title: t('projects.fitness'),
+      description: t('projects.fitness.desc'),
       technologies: ['React Native', 'Firebase', 'HealthKit', 'Google Fit'],
       github: '#',
       demo: '#'
@@ -38,7 +41,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl text-center mb-12">Dự Án Nổi Bật</h2>
+        <h2 className="text-4xl text-center mb-12">{t('projects.title')}</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
@@ -60,11 +63,11 @@ export function Projects() {
                 <div className="flex gap-3">
                   <Button variant="outline" size="sm" className="flex-1">
                     <Github className="mr-2 h-4 w-4" />
-                    Code
+                    {t('projects.code')}
                   </Button>
                   <Button variant="default" size="sm" className="flex-1">
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
+                    {t('projects.demo')}
                   </Button>
                 </div>
               </CardContent>

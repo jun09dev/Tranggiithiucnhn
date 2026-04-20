@@ -1,7 +1,10 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
+import { useLanguage } from '../context/LanguageContext';
 
 export function Hero() {
+  const { t } = useLanguage();
+  
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center">
@@ -10,21 +13,20 @@ export function Hero() {
             NT
           </div>
           <h1 className="text-5xl md:text-6xl mb-4">
-            Nguyễn Văn A
+            {t('hero.name')}
           </h1>
           <p className="text-2xl md:text-3xl text-gray-600 mb-6">
-            Full Stack Developer
+            {t('hero.title')}
           </p>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
-            Chuyên xây dựng ứng dụng web hiện đại với React, Node.js và các công nghệ tiên tiến. 
-            Đam mê tạo ra những sản phẩm có giá trị và trải nghiệm người dùng tốt nhất.
+            {t('hero.description')}
           </p>
         </div>
         
         <div className="flex gap-4 justify-center">
           <Button variant="default" size="lg">
             <Mail className="mr-2 h-5 w-5" />
-            Liên hệ
+            {t('hero.contact')}
           </Button>
           <Button variant="outline" size="lg">
             <Github className="mr-2 h-5 w-5" />
