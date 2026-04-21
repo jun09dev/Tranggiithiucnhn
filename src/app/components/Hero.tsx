@@ -9,16 +9,16 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-5xl">
-            NT
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white text-5xl shadow-xl">
+            NMT
           </div>
-          <h1 className="text-5xl md:text-6xl mb-4">
+          <h1 className="text-5xl md:text-6xl mb-4 text-white font-bold">
             {t('hero.name')}
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-600 mb-6">
+          <p className="text-2xl md:text-3xl text-blue-100 mb-6">
             {t('hero.title')}
           </p>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8">
             {t('hero.description')}
           </p>
         </div>

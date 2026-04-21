@@ -23,9 +23,9 @@ export function Education() {
   ];
 
   return (
-    <section id="education" className="py-20 px-4 bg-gray-50">
+    <section id="education" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl text-center mb-12">{t('education.title')}</h2>
+        <h2 className="text-4xl text-center mb-12 text-white font-bold">{t('education.title')}</h2>
         
         <div className="space-y-6">
           {education.map((edu) => (

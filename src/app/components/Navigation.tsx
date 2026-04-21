@@ -29,18 +29,18 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-[#003366]/90 backdrop-blur-md shadow-lg z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl">{t('nav.portfolio')}</div>
-          
+          <div className="text-xl text-white font-bold">{t('nav.portfolio')}</div>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 items-center">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-white/90 hover:text-white transition-colors"
               >
                 {item.label}
               </a>
@@ -49,7 +49,7 @@ export function Navigation() {
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="gap-2">
+                <Button variant="outline" size="sm" className="gap-2 bg-white/10 border-white/30 text-white hover:bg-white/20">
                   <Globe className="h-4 w-4" />
                   {t('nav.language')}
                 </Button>
@@ -75,7 +75,7 @@ export function Navigation() {
           <div className="md:hidden flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                   <Globe className="h-5 w-5" />
                 </Button>
               </DropdownMenuTrigger>
@@ -94,11 +94,13 @@ export function Navigation() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            
+
+
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
+              className="text-white hover:bg-white/10"
             >
               {isOpen ? <X /> : <Menu />}
             </Button>
@@ -112,7 +114,7 @@ export function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="block text-gray-700 hover:text-blue-600 transition-colors"
+                className="block text-white/90 hover:text-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

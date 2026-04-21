@@ -12,32 +12,32 @@ export function Skills() {
       id: 'frontend',
       title: t('skills.frontend'),
       description: t('skills.frontend.desc'),
-      skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'HTML/CSS']
+      skills: ['JavaScript', 'React', 'HTML/CSS']
     },
     {
       id: 'backend',
       title: t('skills.backend'),
       description: t('skills.backend.desc'),
-      skills: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'Java']
+      skills: ['Java', 'C', 'C++']
     },
     {
       id: 'devops',
       title: t('skills.devops'),
       description: t('skills.devops.desc'),
-      skills: ['Docker', 'AWS', 'Git', 'CI/CD', 'Linux', 'Nginx']
+      skills: ['Docker', 'AWS', 'Git', 'Linux']
     },
     {
       id: 'mobile',
       title: t('skills.mobile'),
       description: t('skills.mobile.desc'),
-      skills: ['React Native', 'Flutter', 'iOS', 'Android', 'Firebase']
+      skills: ['React Native', 'Flutter', 'iOS', 'Android']
     }
   ];
 
   return (
     <section id="skills" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl text-center mb-12">{t('skills.title')}</h2>
+        <h2 className="text-4xl text-center mb-12 text-white font-bold">{t('skills.title')}</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           {skillCategories.map((category) => (

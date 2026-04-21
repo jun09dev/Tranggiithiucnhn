@@ -9,30 +9,30 @@ export function Contact() {
   const { t } = useLanguage();
   
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50">
+    <section id="contact" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl text-center mb-12">{t('contact.title')}</h2>
-        
+        <h2 className="text-4xl text-center mb-12 text-white font-bold">{t('contact.title')}</h2>
+
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl mb-6">{t('contact.subtitle')}</h3>
-              <p className="text-gray-600 mb-8">
+              <h3 className="text-2xl mb-6 text-white">{t('contact.subtitle')}</h3>
+              <p className="text-white/90 mb-8">
                 {t('contact.description')}
               </p>
             </div>
-            
+
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-blue-600" />
+              <div className="flex items-center gap-3 text-white/90">
+                <Mail className="h-5 w-5 text-blue-300" />
                 <span>contact@example.com</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-blue-600" />
+              <div className="flex items-center gap-3 text-white/90">
+                <Phone className="h-5 w-5 text-blue-300" />
                 <span>+84 123 456 789</span>
               </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="h-5 w-5 text-blue-600" />
+              <div className="flex items-center gap-3 text-white/90">
+                <MapPin className="h-5 w-5 text-blue-300" />
                 <span>Hà Nội, Việt Nam</span>
               </div>
             </div>

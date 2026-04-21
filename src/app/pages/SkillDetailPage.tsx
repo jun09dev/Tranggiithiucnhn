@@ -32,16 +32,16 @@ export function SkillDetailPage() {
     <div className="min-h-screen pt-24 pb-20 px-4">
       <div className="max-w-4xl mx-auto">
         <Link to="/#skills">
-          <Button variant="ghost" className="mb-6">
+          <Button variant="ghost" className="mb-6 text-white hover:bg-white/10">
             <ArrowLeft className="mr-2 h-4 w-4" />
             {language === 'ko' ? '뒤로 가기' : language === 'vi' ? 'Quay lại' : 'Back'}
           </Button>
         </Link>
-        
+
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl mb-4">{data.title}</h1>
-          <p className="text-xl text-gray-600 mb-4">{data.description}</p>
-          <p className="text-lg text-gray-700">{data.overview}</p>
+          <h1 className="text-4xl md:text-5xl mb-4 text-white font-bold">{data.title}</h1>
+          <p className="text-xl text-blue-100 mb-4">{data.description}</p>
+          <p className="text-lg text-white/90">{data.overview}</p>
         </div>
         
         <div className="space-y-6">
@@ -57,24 +57,17 @@ export function SkillDetailPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm font-medium text-gray-700 mb-1">
-                      {language === 'ko' ? '경험' : language === 'vi' ? 'Kinh nghiệm' : 'Experience'}
-                    </p>
-                    <p className="text-gray-600">{skill.experience}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-700 mb-2">
-                      {language === 'ko' ? '관련 프로젝트' : language === 'vi' ? 'Dự án liên quan' : 'Related Projects'}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {skill.projects.map((project, idx) => (
-                        <Badge key={idx} variant="secondary">
-                          {project}
-                        </Badge>
-                      ))}
-                    </div>
+                <div>
+                  <p className="text-sm font-medium text-gray-700 mb-3">
+                    {language === 'ko' ? '주요 지식' : language === 'vi' ? 'Kiến thức chính' : 'Key Knowledge'}
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {skill.topics.map((topic, idx) => (
+                      <div key={idx} className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <span className="text-gray-700">{topic}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>

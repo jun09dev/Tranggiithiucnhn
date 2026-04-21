@@ -32,21 +32,21 @@ export function EducationDetailPage() {
     <div className="min-h-screen pt-24 pb-20 px-4">
       <div className="max-w-4xl mx-auto">
         <Link to="/#education">
-          <Button variant="ghost" className="mb-6">
+          <Button variant="ghost" className="mb-6 text-white hover:bg-white/10">
             <ArrowLeft className="mr-2 h-4 w-4" />
             {language === 'ko' ? '뒤로 가기' : language === 'vi' ? 'Quay lại' : 'Back'}
           </Button>
         </Link>
-        
+
         <div className="mb-8">
           <div className="flex justify-between items-start flex-wrap gap-4 mb-4">
             <div>
-              <h1 className="text-4xl md:text-5xl mb-2">{data.school}</h1>
-              <p className="text-2xl text-gray-600">{data.major}</p>
+              <h1 className="text-4xl md:text-5xl mb-2 text-white font-bold">{data.school}</h1>
+              <p className="text-2xl text-blue-100">{data.major}</p>
             </div>
-            <Badge variant="outline" className="text-lg px-4 py-2">{data.period}</Badge>
+            <Badge variant="outline" className="text-lg px-4 py-2 text-white border-white">{data.period}</Badge>
           </div>
-          <p className="text-lg text-gray-700">{data.description}</p>
+          <p className="text-lg text-white/90">{data.description}</p>
         </div>
         
         <div className="space-y-6">

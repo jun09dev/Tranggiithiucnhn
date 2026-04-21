@@ -21,9 +21,9 @@ const translations = {
     'nav.language': '언어',
     
     // Hero
-    'hero.name': '응우옌 반 A',
-    'hero.title': '풀스택 개발자',
-    'hero.description': 'React, Node.js 및 최신 기술로 현대적인 웹 애플리케이션을 구축하는 것을 전문으로 합니다. 가치 있는 제품과 최고의 사용자 경험을 만드는 것에 열정을 가지고 있습니다.',
+    'hero.name': '응우옌 민 투언',
+    'hero.title': '풀스택 개발자가 되는 길',
+    'hero.description': 'React 및 최신 기술로 현대적인 웹 애플리케이션을 구축하고 칩 프로그래밍과 같은 프로젝트를 수행할 수 있습니다. 가치 있는 제품과 최고의 사용자 경험을 만드는 것에 열정을 가지고 있습니다.',
     'hero.contact': '연락하기',
     
     // About
@@ -54,16 +54,13 @@ const translations = {
     
     // Projects
     'projects.title': '주요 프로젝트',
-    'projects.ecommerce': '전자상거래 플랫폼',
-    'projects.ecommerce.desc': '장바구니, 결제, 주문 관리 및 관리자 대시보드가 포함된 완전한 기능의 전자상거래 플랫폼입니다.',
-    'projects.task': '작업 관리 앱',
-    'projects.task.desc': '실시간 협업 및 알림 기능이 있는 칸반 스타일 작업 관리 애플리케이션입니다.',
-    'projects.social': '소셜 미디어 대시보드',
-    'projects.social.desc': '시각적 차트와 게시 일정 기능이 있는 다중 플랫폼 소셜 미디어 분석 및 관리 대시보드입니다.',
-    'projects.fitness': '모바일 피트니스 트래커',
-    'projects.fitness.desc': '웨어러블 기기 통합이 가능한 건강 및 신체 활동 추적 모바일 애플리케이션입니다.',
-    'projects.code': '코드',
-    'projects.demo': '데모',
+    'projects.restaurant': '레스토랑 예약 시스템',
+    'projects.restaurant.desc': '실시간 테이블 예약, 메뉴 관리 및 고객 리뷰 기능이 포함된 완전한 기능의 레스토랑 예약 플랫폼입니다.',
+    'projects.video': '비디오 스트리밍 플랫폼',
+    'projects.video.desc': '비디오 업로드, 스트리밍, 재생 목록 관리 및 사용자 상호작용 기능이 있는 비디오 스트리밍 서비스입니다.',
+    'projects.music': '음악 앱',
+    'projects.music.desc': 'Zing MP3와 같은 음악 스트리밍, 재생 목록 생성 및 음악 검색 기능이 있는 음악 플레이어 애플리케이션입니다.',
+    'projects.viewdetails': '자세히 보기',
     
     // Contact
     'contact.title': '연락처',
@@ -80,7 +77,7 @@ const translations = {
     'footer.description': '가치 있는 기술 제품과 뛰어난 사용자 경험을 만드는 것에 열정을 가진 풀스택 개발자입니다.',
     'footer.quicklinks': '빠른 링크',
     'footer.connect': '연결',
-    'footer.rights': '© 2026 응우옌 반 A. All rights reserved.',
+    'footer.rights': '© 2026 응우옌 민 투언. All rights reserved.',
   },
   vi: {
     // Navigation
@@ -94,9 +91,9 @@ const translations = {
     'nav.language': 'Ngôn ngữ',
     
     // Hero
-    'hero.name': 'Nguyễn Văn A',
-    'hero.title': 'Full Stack Developer',
-    'hero.description': 'Chuyên xây dựng ứng dụng web hiện đại với React, Node.js và các công nghệ tiên tiến. Đam mê tạo ra những sản phẩm có giá trị và trải nghiệm người dùng tốt nhất.',
+    'hero.name': 'Nguyễn Minh Tuấn',
+    'hero.title': 'Trên con đường trở thành Full Stack Developer',
+    'hero.description': 'Chuyên xây dựng ứng dụng web hiện đại với React và các công nghệ tiên tiến, có thể làm các dự án như lập trình chip. Đam mê tạo ra những sản phẩm có giá trị và trải nghiệm người dùng tốt nhất.',
     'hero.contact': 'Liên hệ',
     
     // About
@@ -127,16 +124,13 @@ const translations = {
     
     // Projects
     'projects.title': 'Dự Án Nổi Bật',
-    'projects.ecommerce': 'E-Commerce Platform',
-    'projects.ecommerce.desc': 'Nền tảng thương mại điện tử đầy đủ tính năng với giỏ hàng, thanh toán, quản lý đơn hàng và dashboard admin.',
-    'projects.task': 'Task Management App',
-    'projects.task.desc': 'Ứng dụng quản lý công việc theo phong cách Kanban với real-time collaboration và notifications.',
-    'projects.social': 'Social Media Dashboard',
-    'projects.social.desc': 'Dashboard phân tích và quản lý đa nền tảng mạng xã hội với biểu đồ trực quan và lập lịch đăng bài.',
-    'projects.fitness': 'Mobile Fitness Tracker',
-    'projects.fitness.desc': 'Ứng dụng mobile theo dõi sức khỏe và hoạt động thể chất với tích hợp thiết bị đeo.',
-    'projects.code': 'Code',
-    'projects.demo': 'Demo',
+    'projects.restaurant': 'Restaurant Reservation System',
+    'projects.restaurant.desc': 'Nền tảng đặt bàn nhà hàng đầy đủ tính năng với đặt bàn theo thời gian thực, quản lý thực đơn và đánh giá của khách hàng.',
+    'projects.video': 'Video Streaming Platform',
+    'projects.video.desc': 'Dịch vụ phát trực tuyến video với upload video, streaming, quản lý playlist và tương tác người dùng.',
+    'projects.music': 'Music App',
+    'projects.music.desc': 'Ứng dụng nghe nhạc với tính năng phát nhạc trực tuyến, tạo playlist và tìm kiếm nhạc như Zing MP3.',
+    'projects.viewdetails': 'Xem chi tiết',
     
     // Contact
     'contact.title': 'Liên Hệ',
@@ -153,7 +147,7 @@ const translations = {
     'footer.description': 'Full Stack Developer đam mê tạo ra những sản phẩm công nghệ có giá trị và trải nghiệm người dùng tuyệt vời.',
     'footer.quicklinks': 'Liên kết nhanh',
     'footer.connect': 'Kết nối',
-    'footer.rights': '© 2026 Nguyễn Văn A. All rights reserved.',
+    'footer.rights': '© 2026 Nguyễn Minh Tuấn. All rights reserved.',
   },
   en: {
     // Navigation
@@ -167,9 +161,9 @@ const translations = {
     'nav.language': 'Language',
     
     // Hero
-    'hero.name': 'Nguyen Van A',
-    'hero.title': 'Full Stack Developer',
-    'hero.description': 'Specialized in building modern web applications with React, Node.js, and cutting-edge technologies. Passionate about creating valuable products and the best user experiences.',
+    'hero.name': 'Nguyen Minh Tuan',
+    'hero.title': 'On the path to becoming a Full Stack Developer',
+    'hero.description': 'Specialized in building modern web applications with React and cutting-edge technologies, capable of working on projects like chip programming. Passionate about creating valuable products and the best user experiences.',
     'hero.contact': 'Contact',
     
     // About
@@ -200,16 +194,13 @@ const translations = {
     
     // Projects
     'projects.title': 'Featured Projects',
-    'projects.ecommerce': 'E-Commerce Platform',
-    'projects.ecommerce.desc': 'Full-featured e-commerce platform with shopping cart, payment, order management, and admin dashboard.',
-    'projects.task': 'Task Management App',
-    'projects.task.desc': 'Kanban-style task management application with real-time collaboration and notifications.',
-    'projects.social': 'Social Media Dashboard',
-    'projects.social.desc': 'Multi-platform social media analytics and management dashboard with visual charts and post scheduling.',
-    'projects.fitness': 'Mobile Fitness Tracker',
-    'projects.fitness.desc': 'Mobile application for tracking health and physical activities with wearable device integration.',
-    'projects.code': 'Code',
-    'projects.demo': 'Demo',
+    'projects.restaurant': 'Restaurant Reservation System',
+    'projects.restaurant.desc': 'Full-featured restaurant reservation platform with real-time table booking, menu management, and customer reviews.',
+    'projects.video': 'Video Streaming Platform',
+    'projects.video.desc': 'Video streaming service with video upload, streaming, playlist management, and user interactions.',
+    'projects.music': 'Music App',
+    'projects.music.desc': 'Music player application with music streaming, playlist creation, and music search like Zing MP3.',
+    'projects.viewdetails': 'View Details',
     
     // Contact
     'contact.title': 'Contact',
@@ -226,7 +217,7 @@ const translations = {
     'footer.description': 'Full Stack Developer passionate about creating valuable technology products and excellent user experiences.',
     'footer.quicklinks': 'Quick Links',
     'footer.connect': 'Connect',
-    'footer.rights': '© 2026 Nguyen Van A. All rights reserved.',
+    'footer.rights': '© 2026 Nguyen Minh Tuan. All rights reserved.',
   }
 };
 
